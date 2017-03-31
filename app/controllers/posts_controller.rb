@@ -1,4 +1,4 @@
-lass PostsController < ApplicationController
+class PostsController < ApplicationController
 
   before_action :authenticate_user!, :only => [:new, :create]
 
@@ -19,6 +19,7 @@ lass PostsController < ApplicationController
       render :new
     end
   end
+
 
 
   private
